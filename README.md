@@ -1,1 +1,1 @@
-<img align="center" src="/metrics.svg." alt="Metrics" width="600">
+<img align="center" src="/metrics.svg" alt="Metrics" width="600">
