@@ -1,7 +1,7 @@
 name: Metrics
 
 on:
-  schedule: [{cron: "0 * * * *"}]
+  schedule: [{cron: "0 16 * * *"}]
   workflow_dispatch:
   push: {branches: ["master"]}
 jobs:
@@ -16,8 +16,6 @@ jobs:
           user: ochiantropos 
           base: header, repositories
           plugin_lines: yes 
-
-    steps:
       - uses: lowlighter/metrics@latest
         with:
           user: ochiantropos          
@@ -26,8 +24,6 @@ jobs:
           filename: metrics_calendar.svg
           token: ${{secrets.OCHI_CUSTOMIZE}}
           config_timezone: Europe/Kiev
-
-    steps:
       - uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
@@ -39,8 +35,6 @@ jobs:
           filename: metrics_topics.svg
           token: ${{secrets.OCHI_CUSTOMIZE}}
           config_timezone: Europe/Kiev
-
-    steps:
       - uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
@@ -52,8 +46,6 @@ jobs:
           plugin_anilist_sections: characters
           plugin_anilist_shuffle: yes
           plugin_anilist_limit_characters: 22
-
-    steps:
       - uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
@@ -67,7 +59,6 @@ jobs:
           plugin_anilist_shuffle: yes
           plugin_anilist_limit: 6
 
-    steps:
       - uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
@@ -76,7 +67,6 @@ jobs:
           filename: metrics_lang.svg
           token: ${{secrets.OCHI_CUSTOMIZE}}
           config_timezone: Europe/Kiev
-    steps:
       - uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
