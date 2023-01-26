@@ -10,21 +10,20 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Medias1
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
         with:
+          user: ochiantropos
           filename: metrics_base.svg
-          user: ochiantropos 
-          base: header, repositories
           plugin_lines: yes 
-      - uses: lowlighter/metrics@latest
-        with:
-          user: ochiantropos          
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          filename: metrics_calendar.svg
           token: ${{secrets.OCHI_CUSTOMIZE}}
           config_timezone: Europe/Kiev
-      - uses: lowlighter/metrics@latest
+      - name: Medias2
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
           plugin_topics: yes
@@ -34,7 +33,9 @@ jobs:
           filename: metrics_topics.svg
           token: ${{secrets.OCHI_CUSTOMIZE}}
           config_timezone: Europe/Kiev
-      - uses: lowlighter/metrics@latest
+      - name: Medias3
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
           filename: anime_move.svg
@@ -45,7 +46,9 @@ jobs:
           plugin_anilist_sections: characters
           plugin_anilist_shuffle: yes
           plugin_anilist_limit_characters: 22
-      - uses: lowlighter/metrics@latest
+      - name: Medias4
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
           filename: anime_characters.svg
@@ -57,8 +60,9 @@ jobs:
           plugin_anilist_sections: favorites
           plugin_anilist_shuffle: yes
           plugin_anilist_limit: 6
-
-      - uses: lowlighter/metrics@latest
+      - name: Medias5
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
           plugin_languages: yes
@@ -66,7 +70,9 @@ jobs:
           filename: metrics_lang.svg
           token: ${{secrets.OCHI_CUSTOMIZE}}
           config_timezone: Europe/Kiev
-      - uses: lowlighter/metrics@latest
+      - name: Medias6
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
           plugin_music: yes
