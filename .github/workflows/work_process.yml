@@ -28,6 +28,4 @@ jobs:
           plugin_anilist_medias: anime
           plugin_anilist_sections: favorites, characters
           plugin_anilist_shuffle: yes
-          plugin_people_identicons: no
-          plugin_people_shuffle: yes
           config_timezone: Europe/Kiev
