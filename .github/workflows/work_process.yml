@@ -1,10 +1,9 @@
 name: Metrics
+
 on:
-  # Schedule updates (each hour)
   schedule: [{cron: "0 * * * *"}]
-  # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
-  push: {branches: ["master", "main"]}
+  push: {branches: ["master"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -13,16 +12,19 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.OCHI_CUSTOMIZE }}
-
-          # Options
-          template: classic
-          base: header, activity, community, repositories, metadata
-          config_timezone: Europe/Kiev
-          plugin_anilist: yes
-          plugin_anilist_limit: 2
-          plugin_anilist_limit_characters: 22
-          plugin_anilist_medias: anime
-          plugin_anilist_sections: favorites
-          plugin_anilist_shuffle: yes
+          user: congaterori
           plugin_anilist_user: OchiAntropos
+          filename: metrics.svg
+          token: ${{secrets.OCHI_CUSTOMIZE}}
+          #template: classic
+          #base: header, activity, community, repositories, metadata
+          plugin_anilist: yes
+          plugin_anilist_limit.characters: 22
+          plugin_anilist_limit: 5
+          plugin_anilist_medias: anime
+          plugin_anilist_sections: favorites, characters
+          plugin_anilist_shuffle: yes
+          plugin_people: yes
+          plugin_people_identicons: no
+          plugin_people_shuffle: yes
+          config_timezone: Europe/Kiev
