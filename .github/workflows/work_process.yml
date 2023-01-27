@@ -31,7 +31,6 @@ jobs:
       - name: Medias2
         uses: lowlighter/metrics@latest
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
         with:
           user: ochiantropos
           plugin_topics: yes
