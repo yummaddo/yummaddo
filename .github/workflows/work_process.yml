@@ -9,6 +9,7 @@ jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
       - name:  MediasAnime
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
@@ -19,9 +20,52 @@ jobs:
           config_order: anime
           output_action: gist
           committer_gist: ${{ secrets.OCHI_CUSTOMIZE }}
+=======
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics_base.svg
+          user: ochiantropos 
+          base: header, repositories
+          plugin_lines: yes 
+      - uses: lowlighter/metrics@latest
+        with:
+          user: ochiantropos          
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          filename: metrics_calendar.svg
+          token: ${{secrets.OCHI_CUSTOMIZE}}
+          config_timezone: Europe/Kiev
+      - uses: lowlighter/metrics@latest
+        with:
+          user: ochiantropos
+          plugin_topics: yes
+          plugin_topics_mode: icons
+          plugin_topics_sort: activity
+          plugin_topics_limit: 15
+          filename: metrics_topics.svg
+          token: ${{secrets.OCHI_CUSTOMIZE}}
+          config_timezone: Europe/Kiev
+      - uses: lowlighter/metrics@latest
+        with:
+          user: ochiantropos
+          filename: anime_move.svg
+          plugin_anilist_user: OchiAntropos
+          plugin_anilist: yes
+          token: ${{secrets.OCHI_CUSTOMIZE}}
+          config_timezone: Europe/Kiev
+          plugin_anilist_sections: characters
+          plugin_anilist_shuffle: yes
+          plugin_anilist_limit_characters: 22
+      - uses: lowlighter/metrics@latest
+        with:
+          user: ochiantropos
+          filename: anime_characters.svg
+          plugin_anilist_user: OchiAntropos
+>>>>>>> parent of bb4ef16 (Update work_process.yml)
           plugin_anilist: yes
           plugin_anilist_medias: anime
           plugin_anilist_sections: favorites
+<<<<<<< HEAD
           plugin_anilist_limit: 4
 
       - name:  Medias
@@ -42,6 +86,20 @@ jobs:
       - name:  Music
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
+=======
+          plugin_anilist_shuffle: yes
+          plugin_anilist_limit: 6
+
+      - uses: lowlighter/metrics@latest
+        with:
+          user: ochiantropos
+          plugin_languages: yes
+          plugin_languages_sections: recently-used
+          filename: metrics_lang.svg
+          token: ${{secrets.OCHI_CUSTOMIZE}}
+          config_timezone: Europe/Kiev
+      - uses: lowlighter/metrics@latest
+>>>>>>> parent of bb4ef16 (Update work_process.yml)
         with:
           filename: music.svg
           token: ${{ secrets.OCHI_CUSTOMIZE }}
