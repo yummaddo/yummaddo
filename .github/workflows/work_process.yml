@@ -14,7 +14,6 @@ jobs:
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          user: ochiantropos
           filename: metrics_base.svg
           user: ochiantropos 
           base: header, repositories
