@@ -94,6 +94,7 @@ jobs:
           plugin_music_time_range: short
           plugin_music_top_type: tracks
           plugin_music_provider: spotify
+          plugin_music_user: 316bcuxl6yu3ktdqmfblgtadmcf4
           filename: metrics_songs.svg
           token: ${{secrets.OCHI_CUSTOMIZE}}
           config_timezone: Europe/Kiev
