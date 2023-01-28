@@ -2,17 +2,9 @@
 
 <div style = "display: flex;
   justify-content: space-between;">
-
-<div style = "display: flex;
-  justify-content: center;">
 <img align="center" src="metrics_topics.svg" alt="Metrics" width="430">
-</div>
-
-<div style = "display: flex;
-  justify-content: center;">
 
 <img align="center" src="metrics_base.svg" alt="Metrics" width="300">
-</div>
 
 </div>
 
