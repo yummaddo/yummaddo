@@ -71,7 +71,10 @@ jobs:
           base: ""
           user: ochiantropos
           plugin_languages: yes
-          plugin_languages_sections: recently-used
+          plugin_languages_recent_days: 365
+          plugin_languages_details: bytes-size,percentage,lines
+          plugin_languages_sections: recently-used,most-used
+          plugin_languages_colors: rainbow
           filename: metrics_lang.svg
           token: ${{secrets.OCHI_CUSTOMIZE}}
           config_timezone: Europe/Kiev
