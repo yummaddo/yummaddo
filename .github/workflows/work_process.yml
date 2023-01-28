@@ -83,19 +83,4 @@ jobs:
           filename: metrics_lang.svg
           token: ${{secrets.OCHI_CUSTOMIZE}}
           config_timezone: Europe/Kiev
-      - name: Medias6
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          user: ochiantropos
-          plugin_music: yes
-          plugin_music_mode: top
-          plugin_music_limit: 5
-          base: ""
-          plugin_music_time_range: short
-          plugin_music_top_type: tracks
-          plugin_music_provider: spotify
-          plugin_music_user: 316bcuxl6yu3ktdqmfblgtadmcf4
-          filename: metrics_songs.svg
-          token: ${{secrets.OCHI_CUSTOMIZE}}
-          config_timezone: Europe/Kiev
+
