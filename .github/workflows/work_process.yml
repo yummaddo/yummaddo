@@ -90,3 +90,25 @@ jobs:
           filename: metrics_songs.svg
           token: ${{secrets.OCHI_CUSTOMIZE}}
           config_timezone: Europe/Kiev
+      - name: Compact display
+        uses: lowlighter/metrics@latest
+        with:
+          filename: achievements.svg
+          user: ochiantropos
+          token: ${{ secrets.OCHI_CUSTOMIZE }}
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: X
+      - name: Repositories traffic
+        uses: lowlighter/metrics@latest
+        with:
+          base: ""
+          user: ochiantropos
+          filename: traffic.svg
+          token: ${{ secrets.OCHI_CUSTOMIZE }}
+          base: repositories
+          plugin_traffic: yes
