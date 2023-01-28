@@ -18,5 +18,10 @@
   justify-content: center;">
 <img align="center" src="anime_characters.svg" alt="Metrics" width="700">
 </div>
+<div style = "display: flex;
+  justify-content: space-between;">
+<img align="center" src="achievements.svg" alt="Metrics" width="320">
+<img align="center" src="traffic.svg" alt="Metrics" width="320">
+</div>
 
 </div>
