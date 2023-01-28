@@ -1,1 +1,16 @@
-<img align="center" src="/metrics.svg" alt="Metrics" width="600">
+<div >
+<div style = "display: flex;
+  justify-content: space-between;">
+<img align="center" src="metrics_topics.svg" alt="Metrics" width="300">
+<img align="center" src="metrics_base.svg" alt="Metrics" width="300">
+</div>
+
+<div>
+<img align="center" src="metrics_lang.svg" alt="Metrics" width="700">
+</div>
+<div style = "display: flex;
+  justify-content: center;">
+<img align="center" src="anime_characters.svg" alt="Metrics" width="700">
+</div>
+
+</div>
