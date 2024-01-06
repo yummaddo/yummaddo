@@ -15,7 +15,7 @@ jobs:
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          user: ochiantropos
+          user: yummaddo
           filename: metrics_base.svg
           base: ""
           plugin_lines: yes 
@@ -27,7 +27,7 @@ jobs:
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          user: ochiantropos
+          user: yummaddo
           plugin_topics: yes
           plugin_topics_mode: icons
           plugin_topics_sort: activity
@@ -39,7 +39,7 @@ jobs:
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          user: ochiantropos
+          user: yummaddo
           base: ""
           filename: anime_move.svg
           plugin_anilist_user: OchiAntropos
@@ -54,7 +54,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           base: ""
-          user: ochiantropos
+          user: yummaddo
           filename: anime_characters.svg
           plugin_anilist_user: OchiAntropos
           plugin_anilist: yes
@@ -69,7 +69,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           base: ""
-          user: ochiantropos
+          user: yummaddo
           plugin_languages: yes
           plugin_languages_recent_days: 365
           plugin_languages_details: bytes-size,percentage,lines
@@ -83,7 +83,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           base: ""
-          user: ochiantropos
+          user: yummaddo
           plugin_music: yes
           plugin_music_mode: top
           plugin_music_limit: 5
@@ -98,7 +98,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: achievements.svg
-          user: ochiantropos
+          user: yummaddo
           token: ${{ secrets.OCHI_CUSTOMIZE }}
           base: ""
           plugin_achievements: yes
@@ -109,7 +109,7 @@ jobs:
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          user: ochiantropos
+          user: yummaddo
           filename: traffic.svg
           token: ${{ secrets.OCHI_CUSTOMIZE }}
           base: repositories
