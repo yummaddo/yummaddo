@@ -16,14 +16,14 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 5.56mb of code in 2709 edited files across 93 commits over last 30 days</small>
+                <small>estimation from 3.97mb of code in 1677 edited files across 62 commits over last 26 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="262.8832924567805" height="8" fill="#ff0000"/>
-                    <rect mask="url(#languages-bar)" x="262.8832924567805" y="0" width="197.11670754321946" height="8" fill="#ffa500"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="324.9453348082217" height="8" fill="#ff0000"/>
+                    <rect mask="url(#languages-bar)" x="324.9453348082217" y="0" width="135.05466519177835" height="8" fill="#ffa500"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -32,11 +32,11 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#ff0000" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                C#
+                                ASP.NET
                             </div>
                             <small>
-                                <div>219 kB</div>
-                                <div>57.15%</div>
+                                <div>164 kB</div>
+                                <div>70.64%</div>
                             </small>
                         </div>
                     </section>
@@ -46,11 +46,11 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#ffa500" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                ASP.NET
+                                C#
                             </div>
                             <small>
-                                <div>164 kB</div>
-                                <div>42.85%</div>
+                                <div>68.4 kB</div>
+                                <div>29.36%</div>
                             </small>
                         </div>
                     </section>
