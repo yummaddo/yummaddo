@@ -16,15 +16,15 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 6.20mb of code in 3207 edited files across 92 commits over last 28 days</small>
+                <small>estimation from 6.21mb of code in 3212 edited files across 94 commits over last 29 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="254.85295931683268" height="8" fill="#ff0000"/>
-                    <rect mask="url(#languages-bar)" x="254.85295931683268" y="0" width="164.01728693762809" height="8" fill="#ffa500"/>
-                    <rect mask="url(#languages-bar)" x="418.87024625446077" y="0" width="41.129753745539226" height="8" fill="#ffff00"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="252.8069412644119" height="8" fill="#ff0000"/>
+                    <rect mask="url(#languages-bar)" x="252.8069412644119" y="0" width="162.32894756569547" height="8" fill="#ffa500"/>
+                    <rect mask="url(#languages-bar)" x="415.1358888301074" y="0" width="44.86411116989263" height="8" fill="#ffff00"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -37,7 +37,7 @@
                             </div>
                             <small>
                                 <div>256 kB</div>
-                                <div>55.4%</div>
+                                <div>54.96%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -48,8 +48,8 @@
                                 GLSL
                             </div>
                             <small>
-                                <div>41.3 kB</div>
-                                <div>8.94%</div>
+                                <div>45.5 kB</div>
+                                <div>9.75%</div>
                             </small>
                         </div>
                     </section>
@@ -63,7 +63,7 @@
                             </div>
                             <small>
                                 <div>164 kB</div>
-                                <div>35.66%</div>
+                                <div>35.29%</div>
                             </small>
                         </div>
                     </section>
