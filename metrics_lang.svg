@@ -16,14 +16,14 @@
             </section>
             <section class="column">
                 <h3 class="field">Recently used languages</h3>
-                <small>estimation from 5.57mb of code in 2390 edited files across 97 commits over last 27 days</small>
+                <small>estimation from 5.57mb of code in 2397 edited files across 99 commits over last 28 days</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="460" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="413.4398797907007" height="8" fill="#ff0000"/>
-                    <rect mask="url(#languages-bar)" x="413.4398797907007" y="0" width="46.56012020929933" height="8" fill="#ffa500"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="413.4995193791222" height="8" fill="#ff0000"/>
+                    <rect mask="url(#languages-bar)" x="413.4995193791222" y="0" width="46.500480620877816" height="8" fill="#ffa500"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -36,7 +36,7 @@
                             </div>
                             <small>
                                 <div>404 kB</div>
-                                <div>89.88%</div>
+                                <div>89.89%</div>
                             </small>
                         </div>
                     </section>
@@ -50,7 +50,7 @@
                             </div>
                             <small>
                                 <div>45.5 kB</div>
-                                <div>10.12%</div>
+                                <div>10.11%</div>
                             </small>
                         </div>
                     </section>
